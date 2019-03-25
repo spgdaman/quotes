@@ -15,6 +15,22 @@ export class QuoteComponent implements OnInit {
     new Quote(4, "Whether You Think You Can Or Think You Can’t, You’re Right.", "Henry Ford", "Simon Gatheru",0,0, new Date(2019,1,18))
   ];
 
+  firstNum: number = 0;
+  lastNum: number = 0;
+  iteration: number;
+
+  highestUp() {
+    for (this.iteration = 0; this.iteration < this.quotes.length; this.iteration++) {
+      this.lastNum = this.quotes[this.iteration].upvote;
+      if (this.lastNum > this.firstNum) {
+        this.firstNum = this.lastNum;
+      }
+      return this.firstNum;
+    }
+  }
+
+
+
   // highestQuote(index) {
   //   let quoteOne: number;
   //   quoteOne = this.quotes[index].upvote;

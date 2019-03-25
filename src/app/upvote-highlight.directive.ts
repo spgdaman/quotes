@@ -10,6 +10,8 @@ export class UpvoteHighlightDirective {
     this.elem.nativeElement.style.backgroundColor = 'lightblue';
   }
 
+
+
   // // @HostListener('click') onClicks() {
   // //   if (this.highestUpvote) {
   // //     this.highlight('lightblue');

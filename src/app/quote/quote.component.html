@@ -10,7 +10,8 @@
 
   <div class="row" *ngFor='let quote of quotes; let i =index'>
     <div class="col-md-12 row">
-      <blockquote appUpvoteHighlight class="blockquote"><em><strong>"{{quote.quote}}"</strong></em></blockquote>
+      <blockquote appUpvoteHighlight *ngIf="highestUp() === quote.upvote && quote.upvote > 0" class="blockquote"><em><strong>"{{quote.quote}}"</strong></em></blockquote>
+      <blockquote *ngIf="highestUp() !== quote.upvote || quote.upvote === 0" class="blockquote"><em><strong>"{{quote.quote}}"</strong></em></blockquote>
 
       <div class="container">
         <div class="row">

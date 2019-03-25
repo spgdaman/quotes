@@ -6,5 +6,7 @@ export class Quote {
     public quoteDate: Date) {
     this.showQuoteDetails = false;
     this.highestUpvote = false;
+    this.upvote = 0;
+    this.downvote = 0;
   }
 }
