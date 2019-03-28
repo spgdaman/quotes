@@ -3,11 +3,11 @@
 
     <form #quoteForm='ngForm' (ngSubmit)='submitQuote()'>
 
-      <div class="form-group">
+      <div class="col-md-12 form-group">
         <label for="quote">Quote:</label>
         <div class="container">
           <div class="row">
-            <textarea [(ngModel)]='newQuote.quote' name="quote" rows="8" #quote='ngModel' required></textarea>
+            <textarea [(ngModel)]='newQuote.quote' name="quote" rows="10" cols="25" #quote='ngModel' required></textarea>
           </div>
         </div>
 
@@ -16,7 +16,7 @@
         </div>
       </div>
 
-      <div class="form-group">
+      <div class="col-md-12 form-group input">
         <label for="author">Author:</label>
         <div class="container">
           <div class="row">
@@ -29,7 +29,7 @@
         </div>
       </div>
 
-      <div class="form-group">
+      <div class="col-md-12 form-group input">
         <label for="submittor">Submitter:</label>
         <div class="container">
           <div class="row">

@@ -1,10 +1,12 @@
 # Project Name
 
-quotes  
+Quotes
 
-## Project description
+## Project Description
 
-This project is about a simple quotes app, where the user can add a quote and it's details, upvote and downvote on the quote.
+The project is about a simple quotes app, where the user can add a quote from their favorite personality, add the author of the quote as well as the submittor.
+
+In addition the user can upvote or downvote on the quote, qelete a quote, and the quote with the highest number of upvotes gets highlighted.
 
 ## Author Information
 
@@ -21,6 +23,8 @@ HTML, CSS, JavaScript, Bootstrap, Angular, TypeScript.
 ## Contact information
 
 -   simonwaigi@outlook.com
+
+Please make sure to update tests as appropriate.
 
 ## License
 
